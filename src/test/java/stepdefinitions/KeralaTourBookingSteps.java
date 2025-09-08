@@ -36,7 +36,6 @@ public class KeralaTourBookingSteps {
                 ScreenshotUtil.takeScreenshot(driver, "HolidayMenu")
         );
     }
-
     @When("I click on {string} view details")
     public void clickKeralaTour(String tourName) {
         tourPage.clickKeralaQuickKochi();
@@ -45,7 +44,6 @@ public class KeralaTourBookingSteps {
                 ScreenshotUtil.takeScreenshot(driver, "ViewDetails")
         );
     }
-
     // ✅ Implemented step
     @When("I scroll to Calculate Price and fill Tour Type {string} and Adult {string}")
     public void i_scroll_to_calculate_price_and_fill_tour_type_and_adult(String tourType, String adults) {
@@ -53,21 +51,18 @@ public class KeralaTourBookingSteps {
         tourPage.setAdultCount(Integer.parseInt(adults));
         ExtentManager.getTest().log(Status.INFO, "Selected Tour Type: " + tourType + ", Adults: " + adults);
     }
-
     @When("I select Date of Travel {string}")
     public void selectDate(String travelDate) {
         tourPage.selectTravelDate(travelDate);
         ExtentManager.getTest().log(Status.INFO, "Selected Travel Date: " + travelDate);
     }
-
-    // ✅ Implemented step
     @When("I accept Privacy Policy & Terms and click Calculate Package Price")
     public void i_accept_privacy_policy_terms_and_click_calculate_package_price() {
         // We already handle this in fillContactDetails
         ExtentManager.getTest().log(Status.INFO, "Accepted Privacy Policy & clicked Calculate Package Price");
     }
 
-    // ✅ Implemented step
+  
     @When("I select Pay Full Amount and click Continue")
     public void i_select_pay_full_amount_and_click_continue() {
         // Already handled inside fillContactDetails -> clicking full amount + continue
@@ -79,23 +74,19 @@ public class KeralaTourBookingSteps {
         tourPage.fillContactDetails(mobile, email);
         ExtentManager.getTest().log(Status.INFO, "Filled Contact Details: " + mobile + ", " + email);
     }
-
     @When("I sign in with {string} and continue as guest")
     public void continueGuest(String email) {
         tourPage.continueAsGuest();
         ExtentManager.getTest().log(Status.INFO, "Continued as guest with email: " + email);
     }
-
     @When("I fill Traveller 1 details {string}, {string}, {string}, {string}, {string}")
     public void traveller1(String title, String fName, String lName, String dob, String meal) {
         tourPage.fillTraveller1(title, fName, lName, dob, meal);
     }
-
     @When("I fill Traveller 2 details {string}, {string}, {string}, {string}, {string}")
     public void traveller2(String title, String fName, String lName, String dob, String meal) {
         tourPage.fillTraveller2(title, fName, lName, dob, meal);
     }
-
     @When("I fill Address details {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}, {string}")
     public void address(String title, String fName, String lName, String addr, String state,
                         String city, String pincode, String email, String mobile) {

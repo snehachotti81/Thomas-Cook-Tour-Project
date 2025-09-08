@@ -17,7 +17,7 @@ Feature: User Login on ThomasCook
     Given I am on the ThomasCook login page
     When I enter login details "<loginId>" and send OTP
     And I click on the login button
-  #  Then I should be logged in successfully
+   # Then I should be logged in successfully
 
     Examples:
       | loginId                 |

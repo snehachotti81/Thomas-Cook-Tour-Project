@@ -12,20 +12,17 @@ public class DriverFactory {
         if (THREAD_DRIVER.get() == null) {
             String browser = ConfigReader.get("browser");
             WebDriver driver;
-
             if ("firefox".equalsIgnoreCase(browser)) {
                 driver = new FirefoxDriver();
             } else {
               
                 ChromeOptions options = new ChromeOptions();
-               
                 options.addArguments("--disable-extensions");
                 options.addArguments("--start-maximized");
                 options.addArguments("--disable-popup-blocking");
                 options.addArguments("--disable-notifications"); // allow notifications
                 driver = new ChromeDriver(options);
             }
-
             // Implicit wait
             long implicit = Long.parseLong(ConfigReader.get("implicit.wait"));
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicit));
@@ -40,7 +37,6 @@ public class DriverFactory {
            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
             // Save driver in ThreadLocal
             THREAD_DRIVER.set(driver);
         }

@@ -9,7 +9,6 @@ import utils.ExtentManager;
 import utils.ScreenshotUtil;
 
 public class Hooks {
-
     @Before
     public void beforeScenario(Scenario scenario) {
         // Start WebDriver

@@ -9,9 +9,7 @@ import factory.DriverFactory;
 import utils.AppLogger;
 import utils.ExtentManager;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.ExtentTest;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -36,14 +34,12 @@ public class LoginSteps {
             return null;
         }
     }
-
     @Given("I am on the ThomasCook login page")
     public void i_am_on_login_page() {
        driver.get("https://www.thomascook.in/");
        loginPage.openLoginForm();
        test.info("Opened ThomasCook login page");
-       AppLogger.info("Open Login Page ");
-    
+       AppLogger.info("Open Login Page ");  
     }
 
     @When("I enter login details {string} and send OTP")
@@ -60,8 +56,7 @@ public class LoginSteps {
     @When("I click on the login button")
     public void i_click_login_button() {
         loginPage.clickLogin();
-        AppLogger.info("Click on Login Button ");
-        //DriverFactory.quitDriver();
+        AppLogger.info("Click on Login Button ");   
         
     }
 
@@ -86,18 +81,13 @@ public class LoginSteps {
 //            String screenshotPath = takeScreenshot("ValidLogin_Exception");
 //            test.fail("❌ Exception during login success check: " + e.getMessage(),
 //                    MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-//        } //finally {
-           // driver.quit();
-        //}
-    
-
+//        } 
     @Then("I should see an error message")
     public void i_should_see_error_message() {
         try {
             assert loginPage.isErrorMessageDisplayed() : "Error message not displayed";
 
             String screenshotPath = takeScreenshot("InvalidLogin");
-
             // ✅ Mark as FAIL
             test.fail("❌ Login failed with invalid user ID (expected failure)",
                     MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
@@ -112,8 +102,6 @@ public class LoginSteps {
             test.fail("❌ Exception during invalid login check: " + e.getMessage(),
                     MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
         } finally {
-
-
             driver.quit();
             		}
     }

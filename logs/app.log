@@ -317,3 +317,25 @@
 2025-09-08 13:26:19 [main] INFO  utils.AppLogger - Opened Thomas Cook Kerala to Kochi Tour Booking: https://www.thomascook.in/
 2025-09-08 13:27:02 [main] INFO  utils.AppLogger - Open Login Page 
 2025-09-08 13:27:28 [main] INFO  utils.AppLogger - Open Login Page 
+2025-09-08 16:27:45 [main] INFO  utils.AppLogger - Opened Thomas Cook website: https://www.thomascook.in/
+2025-09-08 16:27:47 [main] INFO  utils.AppLogger - Navigated to registration page
+2025-09-08 16:27:47 [main] INFO  utils.AppLogger - Selected title: Mr
+2025-09-08 16:27:47 [main] INFO  utils.AppLogger - Entered last name: 
+2025-09-08 16:27:47 [main] INFO  utils.AppLogger - Entered email: invalidEmail
+2025-09-08 16:27:48 [main] INFO  utils.AppLogger - Entered password
+2025-09-08 16:27:48 [main] INFO  utils.AppLogger - Entered confirm password
+2025-09-08 16:27:48 [main] INFO  utils.AppLogger - Entered mobile number: 999
+2025-09-08 16:27:51 [main] INFO  utils.AppLogger - Clicked on Register button
+2025-09-08 16:29:06 [main] INFO  utils.AppLogger - Opened Thomas Cook website: https://www.thomascook.in/
+2025-09-08 16:29:07 [main] INFO  utils.AppLogger - Navigated to registration page
+2025-09-08 16:29:07 [main] INFO  utils.AppLogger - Selected title: Mr
+2025-09-08 16:29:08 [main] INFO  utils.AppLogger - Entered last name: Sharma
+2025-09-08 16:29:08 [main] INFO  utils.AppLogger - Entered email: sneha123@testmail.com
+2025-09-08 16:29:08 [main] INFO  utils.AppLogger - Entered password
+2025-09-08 16:29:08 [main] INFO  utils.AppLogger - Entered confirm password
+2025-09-08 16:29:08 [main] INFO  utils.AppLogger - Entered mobile number: 9876543210
+2025-09-08 16:29:11 [main] INFO  utils.AppLogger - Clicked on Register button
+2025-09-08 16:30:12 [main] INFO  utils.AppLogger - Registration successful, redirected to home page.
+2025-09-08 16:30:24 [main] INFO  utils.AppLogger - Opened Thomas Cook Kerala to Kochi Tour Booking: https://www.thomascook.in/
+2025-09-08 16:31:09 [main] INFO  utils.AppLogger - Open Login Page 
+2025-09-08 16:31:33 [main] INFO  utils.AppLogger - Open Login Page 

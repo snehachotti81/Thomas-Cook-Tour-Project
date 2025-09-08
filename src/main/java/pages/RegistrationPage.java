@@ -94,15 +94,12 @@ public class RegistrationPage {
             } catch (Exception ignored) {}
         }
     }
-
     public void enterFirstName(String fName) {
         safeSendKeys(firstName, fName);
     }
-
     public void enterLastName(String lName) {
         safeSendKeys(lastName, lName);
     }
-
     public void enterEmail(String email) {
         safeSendKeys(emailId, email);
     }
